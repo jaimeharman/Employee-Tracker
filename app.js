@@ -46,7 +46,7 @@ function startUp() {
         break;
 
       case "View All Employees":
-        viewEmps();
+        viewEmployees();
         break;
 
       case "Add Department":
@@ -58,11 +58,11 @@ function startUp() {
         break;
 
       case "Add Employee":
-        addEmp();
+        addEmployee();
         break;
 
       case "Update Employee Role":
-        updateEmp();
+        updateEmployee();
         break;
 
       case "End":
@@ -93,7 +93,7 @@ function viewRoles() {
   })
 }
 
-function viewEmps() {
+function viewEmployees() {
   let query = "SELECT employee.id, employee.first_name, employee.last_name, role.title, role.salary, department.name, employee.manager_id FROM ((employee INNER JOIN role ON employee.role_id = role.id) INNER JOIN department ON role.department_id = department.id) ORDER BY employee.id ASC;"
 
 
@@ -168,7 +168,7 @@ function addRole() {
   })
 }
 
-function addEmp() {
+function addEmployee() {
   let query = "SELECT * FROM role;"
   connection.query(query, function (err, res) {
     if (err) return err;
@@ -210,7 +210,7 @@ function addEmp() {
   })
 }
 
-function updateEmp() {
+function updateEmployee() {
   let employees = [];
   connection.query("SELECT * FROM employee", function (err, answer) {
     for (let i = 0; i < answer.length; i++) {
