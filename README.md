@@ -21,8 +21,12 @@ The application will connect to MySQL and allow for real time updates to the dat
   
   <hr>
   
-  ## Installation Instructions <a name="install"></a>
+ ![Employee Tracker](images/week12.PNG)
+ 
+ ![Database](images/wk12-1.PNG) 
   
+  ## Installation Instructions <a name="install"></a>
+ 
   npm i will install the needed dependencies. MySQL software is also needed. Schema file are included in the db folder.
   
   <hr>
