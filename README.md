@@ -35,7 +35,7 @@ The application will connect to MySQL and allow for real time updates to the dat
   
   User will install needed dependencies, and MySQL software. User can then run the application via node app.js. User can enter new depts, roles, and employees with in the cli. User can also update an existing employee with a new role.
   
-  [Watch application in action here.](https://drive.google.com/file/d/1MJ6JOqCWNRGPgUfWfe-CkVlFFSU7eaN7/view?usp=sharing)
+  [Watch application in action here.](https://drive.google.com/file/d/1jb-vUl_zWJKfNMEEZDCQUsKdeEYjaueF/view?usp=sharing)
 
   User will also have to update the app.js with their connection information:
 
